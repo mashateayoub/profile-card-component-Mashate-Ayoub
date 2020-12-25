@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+    *{
+      margin: 0;
+    }
+    body{
+      background: hsl(185, 75%, 39%);
+      font-family: 'Kumbh Sans', sans-serif;
+    }
+    .container{
+      margin: 150px auto;
+      width: 350px;
+      text-align:center;
+      
+    }
+    .image{
+      background: url(images/bg-pattern-card.svg);
+      height: 140px;
+      width: 100%;
+      border-radius: 20px 20px 0 0;
+    }
+    .profile{
+      border-radius: 500px;
+      margin-bottom:-175px;
+      background:white;
+      border: 5px solid white ;
+      
+    }
+    .card_txt{
+      background-color: white;
+      font-weight: 700;
+      border-radius: 0 0 20px 20px ;
+    }
+    .name{
+      padding-top: 70px;
+      padding-bottom: 30px;
+      color: hsl(229, 23%, 23%);
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .name span{
+        color: hsl(227, 10%, 46%);
+        font-weight: 400;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .city{
+      margin-top: 10px;
+      color: hsl(227, 10%, 46%);
+      font-weight: 400;
+      font-size: 14px;
+    }
+    hr{
+      border-top: none;
+    }
+    .stats{
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-right: 45px;
+    }
+    ul{
+     
+      align-items: center;
+      display: inline-block;
+      list-style: none;
+    }
+    ul li{
+      color: hsl(229, 23%, 23%);
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .stats_name{
+      color: hsl(227, 10%, 46%);
+      font-weight: 400;
+      font-size: 14px;
+    }
+    .top{
+      margin-top: -1200px;
+      margin-left: -200px;
+      z-index: -1;
+      position: fixed;
+    }
+    .top svg{
+      width : 978px; height: 978px;
+    }
+    .down{
+      margin-top: -500px;
+      margin-left: 900px;
+      z-index: -1;
+      position: fixed;
+    }
+    .down svg{
+      width : 978px; height: 978px;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="image">
+      <img src="images/image-victor.jpg" alt="" class="profile">
+    </div>
+    <div class="card_txt">
+      <div class="name">
+        Victor Crest
+        <span>26</span>
+          <div class="city">London
+          </div>
+      </div>
+      <hr>
+      <div class="stats">
+        <ul>
+          <li>80K</li>
+          <li class="stats_name">Followers</li>
+        </ul>
+        <ul>
+          <li>803K</li>
+          <li class="stats_name">  Likes</li>
+        </ul>   
+        <ul>
+          <li>1.4K</li>
+          <li class="stats_name">Photos</li>
+        </ul>      
+      </div>
+    </div>
+
+  </div>
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mashate Ayoub</a>.
+  </div>
+
+
+
+
+<div class="top"><svg  xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="a"><stop stop-color="#0989B4" stop-opacity="0" offset="0%"/><stop stop-color="#53FFEE" offset="99.94%"/></linearGradient></defs><ellipse fill="url(#a)" transform="rotate(-135 489 489)" cx="489" cy="489" rx="489" ry="488" fill-rule="evenodd" opacity=".5"/></svg></div>
+  <div class="down"><svg  xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="a"><stop stop-color="#0989B4" stop-opacity="0" offset="0%"/><stop stop-color="#53FFEE" offset="99.94%"/></linearGradient></defs><ellipse fill="url(#a)" transform="scale(1 -1) rotate(45 1669.55 0)" cx="489" cy="489" rx="489" ry="488" fill-rule="evenodd" opacity=".25"/></svg></div>
+</body>
+</html>
